@@ -360,8 +360,6 @@ round(cor(ev.data.pc, pc.ev$scores) , 3)
 screeplot(pc.ev,type='l',main='Screeplot for Electric Vehicle')  
 abline(1,0,col='red',lty=2) #horizontal line at 1
 
-# scatterplot of scores with labels given by mammal in col 1
-#  type=n turns off the default symbol
 plot(pc.ev$scores[,1:2], type='n',xlab="PC1(59%)", ylab="PC2(18%)" )
 points(pc.ev$scores[,1:2],cex=0.5) 
 text(pc.ev$scores[,1:2],label=ev.data.k[,2], pos = 3, cex = 0.5, col = "blue")
